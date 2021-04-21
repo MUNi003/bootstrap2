@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LESSON 4</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+</head>
+<body>
+    
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-info">
+            <div class="container-fluid">
+              <a class="navbar-brand text-light" href="#">Logo</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active text-light" aria-current="page" href="#">Главная</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-light" href="#">О нас</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Всплывающее окно
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Поиск" aria-label="Search">
+                  <button class="btn btn-light" type="submit">Искать</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <main>
+
+        <section class="p-3 bg-light" >
+            <h1 class="mt-4">Привет мир!</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores tempora deserunt laborum quo vitae ratione? Laborum sed tempore suscipit nisi ipsam! Sit excepturi ex ut quos, praesentium repudiandae error quas.</p>
+            <hr>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe dolore consequuntur, sapiente soluta esse in laborum cupiditate obcaecati! Quasi minima debitis tempore, quisquam provident quae quod beatae mollitia exercitationem iste.</p>
+            <div class="text-center">
+                <p>
+                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                      Узнать Больше!
+                    </button>
+                  </p>
+                  <div class="collapse" id="collapseExample">
+                    <div class="card card-body">
+                      Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto, ducimus! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident, illum! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci tempora quasi beatae eligendi omnis magni sint distinctio voluptates? Maxime omnis laboriosam corrupti laborum blanditiis. Accusamus atque sunt harum voluptate non?
+                    </div>
+                  </div>
+            </div>
+        </section>
+
+        <section class=" mt-4 mb-4">
+            <div class="row d-flex justify-content-around">
+                <div class="card mt-3" style="width: 22rem;">
+                    <img src="https://cdn.pixabay.com/photo/2020/09/07/17/40/birds-5552482_1280.jpg" class="card-img-top " alt="...">
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <!-- Button trigger modal -->
+                      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Open corusel
+                      </button>
+                      
+                                            <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                      <div class="carousel-item active">
+                                        <img src="https://cdn.pixabay.com/photo/2015/07/21/11/38/raccoon-853830_1280.jpg" class="d-block w-100 h-100" alt="...">
+                                      </div>
+                                      <div class="carousel-item">
+                                        <img src="https://cdn.pixabay.com/photo/2018/04/13/21/24/lion-3317670_1280.jpg" class="d-block w-100" alt="...">
+                                      </div>
+                                      <div class="carousel-item">
+                                        <img src="https://cdn.pixabay.com/photo/2014/05/19/14/20/goose-348084_1280.jpg" class="d-block w-100" alt="...">
+                                      </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                      <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                      <span class="visually-hidden">Next</span>
+                                    </button>
+                                  </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="card mt-3" style="width: 22rem;">
+                    <img src="https://cdn.pixabay.com/photo/2020/10/23/12/03/arch-5678549_1280.jpg" class="card-img-top" alt="...">
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Open corusel
+                        </button>
+                        
+                                            <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                        <img src="https://cdn.pixabay.com/photo/2015/07/21/11/38/raccoon-853830_1280.jpg" class="d-block w-100 h-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                        <img src="https://cdn.pixabay.com/photo/2018/04/13/21/24/lion-3317670_1280.jpg" class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                        <img src="https://cdn.pixabay.com/photo/2014/05/19/14/20/goose-348084_1280.jpg" class="d-block w-100" alt="...">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                    </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="card mt-3" style="width: 22rem;">
+                    <img src="https://cdn.pixabay.com/photo/2020/10/23/12/03/arch-5678549_1280.jpg" class="card-img-top" alt="...">
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Open corusel
+                        </button>
+                        
+                                            <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                        <img src="https://cdn.pixabay.com/photo/2015/07/21/11/38/raccoon-853830_1280.jpg" class="d-block w-100 h-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                        <img src="https://cdn.pixabay.com/photo/2018/04/13/21/24/lion-3317670_1280.jpg" class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                        <img src="https://cdn.pixabay.com/photo/2014/05/19/14/20/goose-348084_1280.jpg" class="d-block w-100" alt="...">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                    </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                  </div>
+            </div>
+        </section>
+
+        <section class="p-3 bg-light border d-flex justify-content-between">
+            <div class="">
+                <a class="btn btn-success" href="">Добавить новый</a>
+            </div>
+            <form class="d-flex w-50">
+                <input class="form-control me-2 w-100" type="Найти товар" placeholder="Поиск" aria-label="Search">
+                <button class="btn btn-danger" type="submit">Найти</button>
+              </form>
+        </section>
+        
+        <section class="row d-flex justify-content-around mt-4">
+
+            <div class="card p-0 border mb-3 col-xl-2 col-lg-5 col-md-5">
+                <div class="card-header bg-dark text-center">
+                    <p class="text-light">Title</p>
+                </div>
+                <div class="card-body">
+                  <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex, architecto nobis, dolor consequuntur tempore molestias id odit illum debitis provident quod sequi nisi officiis sapiente doloribus maxime consectetur quos minima</p>
+                </div>
+                <div class="card-footer bg-transparent d-flex justify-content-between">
+                    <a class="btn btn-outline-secondary" href="">Edit</a>
+                    <a class="btn btn-primary" href=""> More </a>
+                    <a class="btn btn-outline-danger" href=""> Delete </a>
+                </div>
+              </div>
+
+              <div class="card p-0 border mb-3  col-xl-2 col-lg-5 col-md-5" >
+                <div class="card-header bg-dark text-center">
+                    <p class="text-light">Title</p>
+                </div>
+                <div class="card-body">
+                  <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex, architecto nobis, dolor consequuntur tempore molestias id odit illum debitis provident quod sequi nisi officiis sapiente doloribus maxime consectetur quos minima</p>
+                </div>
+                <div class="card-footer bg-transparent d-flex justify-content-between">
+                    <a class="btn btn-outline-secondary" href="">Edit</a>
+                    <a class="btn btn-primary" href=""> More </a>
+                    <a class="btn btn-outline-danger" href=""> Delete </a>
+                </div>
+              </div>
+
+              <div class="card p-0 border mb-3 col-xl-2 col-lg-5 col-md-5">
+                <div class="card-header bg-dark text-center">
+                    <p class="text-light">Title</p>
+                </div>
+                <div class="card-body">
+                  <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex, architecto nobis, dolor consequuntur tempore molestias id odit illum debitis provident quod sequi nisi officiis sapiente doloribus maxime consectetur quos minima</p>
+                </div>
+                <div class="card-footer bg-transparent d-flex justify-content-between">
+                    <a class="btn btn-outline-secondary" href="">Edit</a>
+                    <a class="btn btn-primary" href=""> More </a>
+                    <a class="btn btn-outline-danger" href=""> Delete </a>
+                </div>
+              </div>
+
+              <div class="card p-0 border mb-3 col-xl-2 col-lg-5 col-md-5">
+                <div class="card-header bg-dark text-center">
+                    <p class="text-light">Title</p>
+                </div>
+                <div class="card-body">
+                  <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex, architecto nobis, dolor consequuntur tempore molestias id odit illum debitis provident quod sequi nisi officiis sapiente doloribus maxime consectetur quos minima</p>
+                </div>
+                <div class="card-footer bg-transparent d-flex justify-content-between">
+                    <a class="btn btn-outline-secondary" href="">Edit</a>
+                    <a class="btn btn-primary" href=""> More </a>
+                    <a class="btn btn-outline-danger" href=""> Delete </a>
+                </div>
+              </div>
+ 
+        </section>
+
+        <section class="row d-flex justify-content-around mt-4">
+
+            <div class="card p-0 border mb-3 col-xl-2 col-lg-5 col-md-5">
+                <div class="card-header bg-dark text-center">
+                    <p class="text-light">Title</p>
+                </div>
+                <div class="card-body">
+                  <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex, architecto nobis, dolor consequuntur tempore molestias id odit illum debitis provident quod sequi nisi officiis sapiente doloribus maxime consectetur quos minima</p>
+                </div>
+                <div class="card-footer bg-transparent d-flex justify-content-between">
+                    <a class="btn btn-outline-secondary" href="">Edit</a>
+                    <a class="btn btn-primary" href=""> More </a>
+                    <a class="btn btn-outline-danger" href=""> Delete </a>
+                </div>
+              </div>
+
+              <div class="card p-0 border mb-3  col-xl-2 col-lg-5 col-md-5" >
+                <div class="card-header bg-dark text-center">
+                    <p class="text-light">Title</p>
+                </div>
+                <div class="card-body">
+                  <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex, architecto nobis, dolor consequuntur tempore molestias id odit illum debitis provident quod sequi nisi officiis sapiente doloribus maxime consectetur quos minima</p>
+                </div>
+                <div class="card-footer bg-transparent d-flex justify-content-between">
+                    <a class="btn btn-outline-secondary" href="">Edit</a>
+                    <a class="btn btn-primary" href=""> More </a>
+                    <a class="btn btn-outline-danger" href=""> Delete </a>
+                </div>
+              </div>
+
+              <div class="card p-0 border mb-3 col-xl-2 col-lg-5 col-md-5">
+                <div class="card-header bg-dark text-center">
+                    <p class="text-light">Title</p>
+                </div>
+                <div class="card-body">
+                  <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex, architecto nobis, dolor consequuntur tempore molestias id odit illum debitis provident quod sequi nisi officiis sapiente doloribus maxime consectetur quos minima</p>
+                </div>
+                <div class="card-footer bg-transparent d-flex justify-content-between">
+                    <a class="btn btn-outline-secondary" href="">Edit</a>
+                    <a class="btn btn-primary" href=""> More </a>
+                    <a class="btn btn-outline-danger" href=""> Delete </a>
+                </div>
+              </div>
+
+              <div class="card p-0 border mb-3 col-xl-2 col-lg-5 col-md-5">
+                <div class="card-header bg-dark text-center">
+                    <p class="text-light">Title</p>
+                </div>
+                <div class="card-body">
+                  <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex, architecto nobis, dolor consequuntur tempore molestias id odit illum debitis provident quod sequi nisi officiis sapiente doloribus maxime consectetur quos minima</p>
+                </div>
+                <div class="card-footer bg-transparent d-flex justify-content-between">
+                    <a class="btn btn-outline-secondary" href="">Edit</a>
+                    <a class="btn btn-primary" href=""> More </a>
+                    <a class="btn btn-outline-danger" href=""> Delete </a>
+                </div>
+              </div>
+ 
+        </section>
+
+        <section class="row d-flex justify-content-around mt-4">
+
+            <div class="card p-0 border mb-3 col-xl-2 col-lg-5 col-md-5">
+                <div class="card-header bg-dark text-center">
+                    <p class="text-light">Title</p>
+                </div>
+                <div class="card-body">
+                  <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex, architecto nobis, dolor consequuntur tempore molestias id odit illum debitis provident quod sequi nisi officiis sapiente doloribus maxime consectetur quos minima</p>
+                </div>
+                <div class="card-footer bg-transparent d-flex justify-content-between">
+                    <a class="btn btn-outline-secondary" href="">Edit</a>
+                    <a class="btn btn-primary" href=""> More </a>
+                    <a class="btn btn-outline-danger" href=""> Delete </a>
+                </div>
+              </div>
+
+              <div class="card p-0 border mb-3  col-xl-2 col-lg-5 col-md-5" >
+                <div class="card-header bg-dark text-center">
+                    <p class="text-light">Title</p>
+                </div>
+                <div class="card-body">
+                  <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex, architecto nobis, dolor consequuntur tempore molestias id odit illum debitis provident quod sequi nisi officiis sapiente doloribus maxime consectetur quos minima</p>
+                </div>
+                <div class="card-footer bg-transparent d-flex justify-content-between">
+                    <a class="btn btn-outline-secondary" href="">Edit</a>
+                    <a class="btn btn-primary" href=""> More </a>
+                    <a class="btn btn-outline-danger" href=""> Delete </a>
+                </div>
+              </div>
+
+              <div class="card p-0 border mb-3 col-xl-2 col-lg-5 col-md-5">
+                <div class="card-header bg-dark text-center">
+                    <p class="text-light">Title</p>
+                </div>
+                <div class="card-body">
+                  <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex, architecto nobis, dolor consequuntur tempore molestias id odit illum debitis provident quod sequi nisi officiis sapiente doloribus maxime consectetur quos minima</p>
+                </div>
+                <div class="card-footer bg-transparent d-flex justify-content-between">
+                    <a class="btn btn-outline-secondary" href="">Edit</a>
+                    <a class="btn btn-primary" href=""> More </a>
+                    <a class="btn btn-outline-danger" href=""> Delete </a>
+                </div>
+              </div>
+
+              <div class="card p-0 border mb-3 col-xl-2 col-lg-5 col-md-5">
+                <div class="card-header bg-dark text-center">
+                    <p class="text-light">Title</p>
+                </div>
+                <div class="card-body">
+                  <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex, architecto nobis, dolor consequuntur tempore molestias id odit illum debitis provident quod sequi nisi officiis sapiente doloribus maxime consectetur quos minima</p>
+                </div>
+                <div class="card-footer bg-transparent d-flex justify-content-between">
+                    <a class="btn btn-outline-secondary" href="">Edit</a>
+                    <a class="btn btn-primary" href=""> More </a>
+                    <a class="btn btn-outline-danger" href=""> Delete </a>
+                </div>
+              </div>
+ 
+        </section>
+
+        <section class="row d-flex justify-content-around mt-4">
+
+            <div class="card p-0 border mb-3 col-xl-2 col-lg-5 col-md-5">
+                <div class="card-header bg-dark text-center">
+                    <p class="text-light">Title</p>
+                </div>
+                <div class="card-body">
+                  <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex, architecto nobis, dolor consequuntur tempore molestias id odit illum debitis provident quod sequi nisi officiis sapiente doloribus maxime consectetur quos minima</p>
+                </div>
+                <div class="card-footer bg-transparent d-flex justify-content-between">
+                    <a class="btn btn-outline-secondary" href="">Edit</a>
+                    <a class="btn btn-primary" href=""> More </a>
+                    <a class="btn btn-outline-danger" href=""> Delete </a>
+                </div>
+              </div>
+
+              <div class="card p-0 border mb-3  col-xl-2 col-lg-5 col-md-5" >
+                <div class="card-header bg-dark text-center">
+                    <p class="text-light">Title</p>
+                </div>
+                <div class="card-body">
+                  <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex, architecto nobis, dolor consequuntur tempore molestias id odit illum debitis provident quod sequi nisi officiis sapiente doloribus maxime consectetur quos minima</p>
+                </div>
+                <div class="card-footer bg-transparent d-flex justify-content-between">
+                    <a class="btn btn-outline-secondary" href="">Edit</a>
+                    <a class="btn btn-primary" href=""> More </a>
+                    <a class="btn btn-outline-danger" href=""> Delete </a>
+                </div>
+              </div>
+
+              <div class="card p-0 border mb-3 col-xl-2 col-lg-5 col-md-5">
+                <div class="card-header bg-dark text-center">
+                    <p class="text-light">Title</p>
+                </div>
+                <div class="card-body">
+                  <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex, architecto nobis, dolor consequuntur tempore molestias id odit illum debitis provident quod sequi nisi officiis sapiente doloribus maxime consectetur quos minima</p>
+                </div>
+                <div class="card-footer bg-transparent d-flex justify-content-between">
+                    <a class="btn btn-outline-secondary" href="">Edit</a>
+                    <a class="btn btn-primary" href=""> More </a>
+                    <a class="btn btn-outline-danger" href=""> Delete </a>
+                </div>
+              </div>
+
+              <div class="card p-0 border mb-3 col-xl-2 col-lg-5 col-md-5">
+                <div class="card-header bg-dark text-center">
+                    <p class="text-light">Title</p>
+                </div>
+                <div class="card-body">
+                  <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex, architecto nobis, dolor consequuntur tempore molestias id odit illum debitis provident quod sequi nisi officiis sapiente doloribus maxime consectetur quos minima</p>
+                </div>
+                <div class="card-footer bg-transparent d-flex justify-content-between">
+                    <a class="btn btn-outline-secondary" href="">Edit</a>
+                    <a class="btn btn-primary" href=""> More </a>
+                    <a class="btn btn-outline-danger" href=""> Delete </a>
+                </div>
+              </div>
+ 
+        </section>
+
+        <section class="row d-flex justify-content-around mt-4">
+
+            <div class="card p-0 border mb-3 col-xl-2 col-lg-5 col-md-5">
+                <div class="card-header bg-dark text-center">
+                    <p class="text-light">Title</p>
+                </div>
+                <div class="card-body">
+                  <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex, architecto nobis, dolor consequuntur tempore molestias id odit illum debitis provident quod sequi nisi officiis sapiente doloribus maxime consectetur quos minima</p>
+                </div>
+                <div class="card-footer bg-transparent d-flex justify-content-between">
+                    <a class="btn btn-outline-secondary" href="">Edit</a>
+                    <a class="btn btn-primary" href=""> More </a>
+                    <a class="btn btn-outline-danger" href=""> Delete </a>
+                </div>
+              </div>
+
+              <div class="card p-0 border mb-3  col-xl-2 col-lg-5 col-md-5" >
+                <div class="card-header bg-dark text-center">
+                    <p class="text-light">Title</p>
+                </div>
+                <div class="card-body">
+                  <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex, architecto nobis, dolor consequuntur tempore molestias id odit illum debitis provident quod sequi nisi officiis sapiente doloribus maxime consectetur quos minima</p>
+                </div>
+                <div class="card-footer bg-transparent d-flex justify-content-between">
+                    <a class="btn btn-outline-secondary" href="">Edit</a>
+                    <a class="btn btn-primary" href=""> More </a>
+                    <a class="btn btn-outline-danger" href=""> Delete </a>
+                </div>
+              </div>
+
+              <div class="card p-0 border mb-3 col-xl-2 col-lg-5 col-md-5">
+                <div class="card-header bg-dark text-center">
+                    <p class="text-light">Title</p>
+                </div>
+                <div class="card-body">
+                  <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex, architecto nobis, dolor consequuntur tempore molestias id odit illum debitis provident quod sequi nisi officiis sapiente doloribus maxime consectetur quos minima</p>
+                </div>
+                <div class="card-footer bg-transparent d-flex justify-content-between">
+                    <a class="btn btn-outline-secondary" href="">Edit</a>
+                    <a class="btn btn-primary" href=""> More </a>
+                    <a class="btn btn-outline-danger" href=""> Delete </a>
+                </div>
+              </div>
+
+              <div class="card p-0 border mb-3 col-xl-2 col-lg-5 col-md-5">
+                <div class="card-header bg-dark text-center">
+                    <p class="text-light">Title</p>
+                </div>
+                <div class="card-body">
+                  <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex, architecto nobis, dolor consequuntur tempore molestias id odit illum debitis provident quod sequi nisi officiis sapiente doloribus maxime consectetur quos minima</p>
+                </div>
+                <div class="card-footer bg-transparent d-flex justify-content-between">
+                    <a class="btn btn-outline-secondary" href="">Edit</a>
+                    <a class="btn btn-primary" href=""> More </a>
+                    <a class="btn btn-outline-danger" href=""> Delete </a>
+                </div>
+              </div>
+ 
+        </section>
+
+
+
+
+        <section class="d-flex justify-content-center mt-4 mb-5">
+            <nav aria-label="Page navigation example">
+                <ul class="pagination">
+                  <li class="page-item">
+                    <a class="page-link  border-primary" href="#" aria-label="Previous">
+                      <span aria-hidden="true">&laquo;</span>
+                    </a>
+                  </li>
+                  <li class="page-item"><a class="page-link  border-primary" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link  border-primary" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link  border-primary" href="#">3</a></li>
+                  <li class="page-item">
+                    <a class="page-link  border-primary " href="#" aria-label="Next">
+                      <span  aria-hidden="true">&raquo;</span>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+        </section>
+
+    </main>
+
+    <footer class="text-center bg-light border pt-4 ">
+
+        <span class="badge bg-primary m-1">#HTML</span>
+        <span class="badge bg-secondary m-1">#CSS</span>
+        <span class="badge bg-success m-1">#BootStrap</span>
+        <span class="badge bg-danger m-1">#GitHub</span>
+        <span class="badge bg-warning text-dark m-1">#JavaScript</span>
+        <span class="badge bg-info text-dark m-1">#Reackt</span>
+        <span class="badge bg-light text-dark m-1">#Java</span>
+        <span class="badge bg-dark  m-1">#Python</span>
+
+        <p class="mt-5 mb-5">IT Academy Osh 2020</p>
+
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+</body>
+</html>
